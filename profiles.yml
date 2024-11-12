@@ -1,0 +1,12 @@
+my_dbt_project:
+  outputs:
+    dev:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 15432
+      user: dbt_user
+      pass: dbt_password
+      dbname: dbt_database
+      schema: dbt_schema
+  target: dev
